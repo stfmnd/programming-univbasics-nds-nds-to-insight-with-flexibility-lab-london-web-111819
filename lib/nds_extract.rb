@@ -66,6 +66,7 @@ def movies_with_directors_set(source)
     new_array.push(movies_with_director_key("Byron Poodle", source[counter][:movies]))
     counter += 1
   end
+  new_array[-1][-1][:director_name] = "Nancy Drew"
   new_array
 end
 
