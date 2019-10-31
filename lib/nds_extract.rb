@@ -31,10 +31,6 @@ def movie_with_director_name(director_name, movie_data)
 
 end
 
-name = 'Matthew'
-example = directors_database[0][:movies][0]
-pp movie_with_director_name(name, example)
-
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
