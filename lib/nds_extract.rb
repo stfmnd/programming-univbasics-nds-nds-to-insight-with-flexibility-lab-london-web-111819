@@ -28,7 +28,6 @@ def movie_with_director_name(director_name, movie_data)
     :release_year => movie_data[:release_year],
     :studio => movie_data[:studio]
   }
-
 end
 
 # Your code after this point
@@ -57,6 +56,26 @@ def gross_per_studio(collection)
   #
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
+  counter = 0
+  universal_sum = 0
+  new_array = []
+  while counter < collection.length do 
+    new_array.push(collection[counter][:studio])
+    updated_array = new_array.uniq
+    
+    array_counter = 0
+    studio_uni = collection[counter][:studio] = "Universal"
+    while array_counter < updated_array.length do 
+      if updated_array[array_counter] == studio_uni
+        universal_sum += collection[counter][:worldwide_gross]
+      end
+      counter += 1
+      array_counter += 1
+    end
+    pp universal_sum
+  end
+  
+
 end
 
 def movies_with_directors_set(source)
