@@ -69,6 +69,8 @@ def gross_per_studio(collection)
     while second_counter < collection.length do 
       if collection[second_counter][:studio] ==  
     end
+    studio_counter += 1
+  end
 end
 
 def movies_with_directors_set(source)
