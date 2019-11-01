@@ -61,7 +61,6 @@ def gross_per_studio(collection)
   counter = 0
   result = {}
   while counter < collection.length do 
-    
     if result[collection[counter][:studio]]
     result[collection[counter][:studio]] += result[collection[counter][:worldwide_gross]]
   else
