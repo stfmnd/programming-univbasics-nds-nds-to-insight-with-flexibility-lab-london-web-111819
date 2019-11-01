@@ -65,7 +65,6 @@ def gross_per_studio(collection)
     studio_array.push(collection[counter][:studio])
     studio_array.uniq
     array_counter += 1
-  end
   while counter < collection.length do 
     if collection[counter][:studio] == studio_array[0]
       sum += collection[counter][:worldwide_gross])
