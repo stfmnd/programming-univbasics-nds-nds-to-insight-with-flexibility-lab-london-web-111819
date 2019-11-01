@@ -62,9 +62,11 @@ def gross_per_studio(collection)
   while counter < collection.length do 
     new_array.push(collection[counter][:studio])
     studio_list = new_array.uniq
-  end
-  while 
-  
+    
+    while counter < studio_list.length do 
+      if collection[counter] == studio_list[0]
+       sum += collection[counter][:worldwide_gross]
+    end
 end
 
 def movies_with_directors_set(source)
