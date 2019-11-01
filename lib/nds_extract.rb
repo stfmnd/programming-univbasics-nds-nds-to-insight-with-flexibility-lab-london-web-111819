@@ -59,6 +59,7 @@ def gross_per_studio(collection)
   counter = 0
   second_counter = 0
   studio_counter = 0
+  sum = 0
   new_array = []
   while counter < collection.length do 
     new_array.push(collection[counter][:studio])
@@ -67,7 +68,8 @@ def gross_per_studio(collection)
   end
   while studio_counter < studio_array.length
     while second_counter < collection.length do 
-      if collection[second_counter][:studio] == studio_array[studio_counter] 
+      if collection[second_counter][:studio] == studio_array[studio_counter]
+        
     end
     studio_counter += 1
   end
