@@ -57,22 +57,10 @@ def gross_per_studio(collection)
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
   counter = 0
-  array_counter = 0
-  studio_array = []
-  sum_array = []
-  sum = 0
-  while array_counter < collection.length do
-    studio_array.push(collection[counter][:studio])
-    studio_array.uniq
-    array_counter += 1
+  new_array = []
   while counter < collection.length do 
-    if collection[counter][:studio] == studio_array[0]
-      sum += collection[counter][:worldwide_gross])
-    end
-    sum_array.push(sum)
-    counter += 1
+    
   end
-  pp sum_array
 end
 
 def movies_with_directors_set(source)
