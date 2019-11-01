@@ -59,6 +59,7 @@ def gross_per_studio(collection)
   counter = 0
   second_counter = 0
   new_array = []
+  sum = 0
   while counter < collection.length do 
     new_array.push(collection[counter][:studio])
     studio_list = new_array.uniq
