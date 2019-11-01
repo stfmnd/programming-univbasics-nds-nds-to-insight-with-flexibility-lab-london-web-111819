@@ -64,7 +64,9 @@ def gross_per_studio(collection)
     studio_array = new_array.uniq
     counter += 1
   end
-  
+  while studio_counter < collection.length do 
+    
+  end
 end
 
 def movies_with_directors_set(source)
