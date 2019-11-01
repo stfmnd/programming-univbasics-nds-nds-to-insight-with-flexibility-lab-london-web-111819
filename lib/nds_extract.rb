@@ -62,6 +62,7 @@ def gross_per_studio(collection)
     new_array.push(collection[counter][:studio])
     studio_array = new_array.uniq
   end
+  pp studio_array
 end
 
 def movies_with_directors_set(source)
