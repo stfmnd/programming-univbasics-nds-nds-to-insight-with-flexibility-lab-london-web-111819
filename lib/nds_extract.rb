@@ -70,8 +70,8 @@ def gross_per_studio(collection)
        sum += collection[counter][:worldwide_gross]
        result[studio_list[0]] = sum
      end
+     counter += 1
     end
-    counter += 1
   end
   pp result
 end
