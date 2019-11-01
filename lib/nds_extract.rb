@@ -64,7 +64,7 @@ def gross_per_studio(collection)
     if result[collection[counter][:studio]]
     result[collection[counter][:studio]] += collection[counter][:worldwide_gross]
   else
-    result[collection[counter][:studio]] = result[collection[counter][:worldwide_gross]]
+    result[collection[counter][:studio]] = collection[counter][:worldwide_gross]
   end
   binding.pry
   end
