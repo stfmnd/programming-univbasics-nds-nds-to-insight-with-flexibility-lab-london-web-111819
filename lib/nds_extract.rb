@@ -62,6 +62,7 @@ def gross_per_studio(collection)
   result = {}
   while counter < collection.length do 
     binding.pry
+    result[Alpha Films] = 
   end
 end
 
